@@ -16,7 +16,18 @@
 	               	</div>
 	            </div> 
 				<div class="main-login main-center">
-					arbol
+					<ul class="list-unstyled">
+						<li><i class="fa fa-arrow-circle-down fa" aria-hidden="true"></i> Entrantes</li>
+						<ul> 
+							<li><i class="fa fa-info-circle fa" aria-hidden="true"></i> Sin tratar</li>
+							<li><i class="fa fa-check-circle fa" aria-hidden="true"></i> Tratados</li>
+							<li><i class="fa fa-times-circle fa" aria-hidden="true"></i> Erroneos</li>
+						</ul>
+						<li><i class="fa fa-arrow-circle-up fa" aria-hidden="true"></i> Salientes</li>
+						<li><i class="fa fa-database fa" aria-hidden="true"></i> Volúmenes</li>
+						<li><i class="fa fa-filter fa" aria-hidden="true"></i> Consultas</li>
+						<li><i class="fa fa-fire fa" aria-hidden="true"></i> Eliminados</li>
+					</ul>
 				</div>
 			</div>
   			<div class="col-sm-9">
@@ -25,16 +36,48 @@
 	            </div>
 	            <div class="main-login main-justify">
 	            	<p>
-	            		tabla de documentos
-	            	</p>
-	            	<p>
-	            		{{4*4}}
+	            	<div class="table-responsive">
+	            		<table class="table table-bordered">
+	            			<thead class="thead-inverse">
+						    <tr>
+						      <th><i class="fa fa-caret-up fa" aria-hidden="true"></th>
+						      <th>Destino</th>
+						      <th>Origen</th>
+						      <th>Tipo</th>
+						      <th>N° documento</th>
+						      <th>Fecha Documento</th>
+						      <th>Fecha Cambio Situación</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row"><i class="fa fa-gear fa" aria-hidden="true"></th>
+						      <td>Company F</td>
+						      <td>Partner Externo F</td>
+						      <td>Pedido</td>
+						      <td>PED123</td>
+						      <td>2014/05/01 18:08:00</td>
+						      <td>2014/05/01 18:08:00</td>
+						    </tr>
+						    <tr>
+						      <th scope="row"><i class="fa fa-gear fa" aria-hidden="true"></th>
+						      <td>Company Q</td>
+						      <td>Partner Externo Q</td>
+						      <td>Albarán</td>
+						      <td>ALB123</td>
+						      <td>2014/05/01 18:08:00</td>
+						      <td>2014/05/01 18:08:00</td>
+						    </tr>
+						  </tbody>
+	            		</table>
+	            	</div>
 	            	</p>
 				</div> 
   			</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="lib/angular.min.js"></script>
 		<script src="lib/bootstrap-treeview.js"></script>
 		<script src="lib/jquery.js"></script>
